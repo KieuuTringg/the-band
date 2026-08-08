@@ -1,0 +1,101 @@
+/* PC */
+@media (min-width: 1024px) {}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #content .content-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px !important;
+    }
+
+    .s-mt-32 {
+        margin-top: 32px !important;
+    }
+
+    /* Header & Nav Mobile */
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav>li {
+        display: block;
+        order: 2;
+    }
+
+    #nav>li.active {
+        order: 1;
+    }
+
+    #nav>li.active>a,
+    #nav .subnav li.active>a {
+        background-color: #ccc !important;
+        color: #000 !important;
+    }
+
+    /* Subnav trên Mobile */
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+        display: none;
+    }
+
+    #nav .subnav a {
+        color: #fff !important;
+        padding: 0 41px;
+        line-height: 38px;
+    }
+
+    /* Content Mobile */
+    #content .content-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-info {
+        margin-bottom: 16px;
+    }
+
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+}

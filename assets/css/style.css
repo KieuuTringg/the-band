@@ -93,7 +93,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden; /* Ẩn các mục menu dư ra khi thu nhỏ header trên mobile */
 }
 
 #nav {
@@ -105,7 +104,7 @@ html {
     list-style-type: none;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
@@ -113,7 +112,7 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     color: #fff;
     text-transform: uppercase;
 }
@@ -129,8 +128,8 @@ html {
     display: block;
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover > a {
+#nav>li:hover>a,
+#nav .subnav li:hover>a {
     background-color: #ccc;
     color: #000;
 }
@@ -159,7 +158,7 @@ html {
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
-    padding: 0 24px;
+    padding: 0 21px;
     cursor: pointer;
 }
 
@@ -514,92 +513,9 @@ html {
         opacity: 0;
         transform: translateY(-140px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* Responsive Section */
-
-/* PC (Màn hình lớn) */
-@media (min-width: 1024px) {
-    .hide-on-pc {
-        display: none !important;
-    }
-}
-
-/* Tablet & Mobile (< 1024px) */
-@media (max-width: 1023px) {
-    .btn {
-        padding: 15px 16px;
-    }
-
-    .contact-form {
-        margin-top: 32px;
-    }
-
-    #footer .socials-list a {
-        font-size: 30px;
-        padding: 0 8px;
-    }
-}
-
-/* Mobile (< 740px) */
-@media (max-width: 739px) {
-    .s-col-full {
-        width: 100% !important;
-    }
-
-    .s-mt-8 {
-        margin-top: 8px !important;
-    }
-
-    .s-full-width {
-        width: 100% !important;
-    }
-
-    /* Header & Nav trên Mobile */
-    #header {
-        overflow: hidden;
-    }
-
-    #header .search-btn {
-        display: none;
-    }
-
-    #header .mobile-menu-btn {
-        display: block;
-    }
-
-    #nav {
-        display: block;
-    }
-
-    #nav > li {
-        display: block;
-    }
-
-    #nav > li:first-child {
-        display: inline-block;
-    }
-
-    #nav .subnav {
-        position: initial;
-        background-color: #333;
-    }
-
-    #nav .subnav a {
-        color: #fff;
-        padding: 0 42px;
-    }
-
-    /* Nội dung trên Mobile */
-    .member-img {
-        width: 60%;
-    }
-
-    .contact-info {
-        font-size: 16px;
     }
 }
