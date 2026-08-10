@@ -1,101 +1,164 @@
 /* PC */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+}
+
+/* Tablet và Mobile */
+@media (max-width: 1023px) {
+  .btn {
+    padding: 12px 16px;
+  }
+
+  #nav .subnav a {
+    padding: 5px 12px;
+  }
+
+  .contact-info {
+    line-height: 2;
+  }
+
+  .contact-form .form-control {
+    padding: 15px;
+  }
+
+  #footer .socials-list a {
+    font-size: 36px;
+    margin: 0 8px;
+  }
+
+  #footer .copyright {
+    padding: 12px 0;
+  }
+}
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    #content .content-section {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  #content .content-section {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
-    .s-col-full {
-        width: 100% !important;
-    }
+  #content .content-section {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .s-full-width {
-        width: 100% !important;
-    }
+  .s-col-full {
+    width: 100% !important;
+  }
 
-    .s-mt-8 {
-        margin-top: 8px !important;
-    }
+  .s-full-width {
+    width: 100% !important;
+  }
 
-    .s-mt-16 {
-        margin-top: 16px !important;
-    }
+  .s-mt-8,
+  .mt-8 {
+    margin-top: 8px !important;
+  }
 
-    .s-mt-32 {
-        margin-top: 32px !important;
-    }
+  .s-mt-16,
+  .mt-16 {
+    margin-top: 16px !important;
+  }
 
-    /* Header & Nav Mobile */
-    #header {
-        overflow: hidden;
-    }
+  .s-mt-32,
+  .mt-32 {
+    margin-top: 32px !important;
+  }
 
-    #header .search-btn {
-        display: none;
-    }
+  /* Header Mobile */
+  #header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100;
+  }
 
-    #header .mobile-menu-btn {
-        display: block;
-    }
+  #header .search-btn {
+    display: none;
+  }
 
-    #nav {
-        display: flex;
-        flex-direction: column;
-    }
+  #header .mobile-menu-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 21px;
+    line-height: 46px;
+    color: #fff !important;
+    z-index: 10;
+    cursor: pointer;
+  }
 
-    #nav>li {
-        display: block;
-        order: 2;
-    }
+  #header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    color: #000 !important;
+  }
 
-    #nav>li.active {
-        order: 1;
-    }
+  /* Nav Mobile */
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #nav>li.active>a,
-    #nav .subnav li.active>a {
-        background-color: #ccc !important;
-        color: #000 !important;
-    }
+  #nav > li {
+    display: block;
+  }
 
-    /* Subnav trên Mobile */
-    #nav .subnav {
-        position: initial;
-        background-color: #333;
-        display: none;
-    }
+  #header:not(.is-open) #nav > li:not(.active) {
+    display: none;
+  }
 
-    #nav .subnav a {
-        color: #fff !important;
-        padding: 0 41px;
-        line-height: 38px;
-    }
+  #nav > li.active > a,
+  #nav .subnav li.active > a {
+    background-color: #ccc !important;
+    color: #000 !important;
+  }
 
-    /* Content Mobile */
-    #content .content-section {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  /* Subnav Mobile */
+  #nav .subnav {
+    position: initial;
+    background-color: #333;
+    display: none;
+  }
 
-    #content .member-img {
-        width: 60%;
-    }
+  #nav .subnav a {
+    color: #fff !important;
+    padding: 0 41px;
+    line-height: 38px;
+  }
 
-    .contact-info {
-        margin-bottom: 16px;
-    }
+  /* Content Mobile */
+  #content .member-list {
+    margin-top: 32px;
+  }
 
-    .btn {
-        padding: 15px 16px;
-    }
+  #content .member-list .col {
+    margin-top: 32px;
+  }
 
-    .contact-form .form-control {
-        padding: 15px;
-    }
+  #content .member-img {
+    width: 60%;
+  }
+
+  /* Contact Form */
+  .contact-info {
+    margin-bottom: 32px;
+  }
+
+  .btn {
+    padding: 15px 16px;
+  }
+
+  .contact-form .form-control {
+    padding: 15px;
+  }
 }
